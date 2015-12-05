@@ -1,0 +1,24 @@
+{
+  "name": "todo_challenge",
+  "homepage": "https://github.com/jbhdeconinck/todo_challenge",
+  "authors": [
+    "jbhdeconinck <jbhdeconinck@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-resource": "~1.4.8"
+  }
+}
