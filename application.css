@@ -1,0 +1,86 @@
+.titleRectangle {
+  width:500px;
+  height:60px;
+  border:1px solid #000;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: center;
+  }
+
+.title {
+  margin-top: 10px;
+}
+
+.form-horizontal {
+  margin-left: 5px;
+}
+
+.addBtn {
+  font-weight: bold;
+}
+
+.task-box {
+  width: 423px;
+  border:1px solid #000;
+}
+
+.task-name {
+  font-size: 20px;
+}
+
+.task {
+  position: relative;
+}
+
+.task .completedTask {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-left: 5px;
+}
+
+.task .list-tasks-item {
+  font-size: 20px;
+  display: inline-block;
+  line-height: 40px;
+  border-left: none;
+}
+
+.task .deleteBtn {
+  display: inline-block;
+  position: absolute;
+  margin-top: 15px;
+  height: 30px;
+  width: 30px;
+  color: red;
+  text-align: center;
+  background-color: none;
+  vertical-align: middle;
+  line-height: 0px;
+  left: 474px;
+  padding: -5px;
+}
+
+.selectors {
+  margin-left: 5px;
+}
+
+.allBtn {
+  height: 30px;
+  width: 60px;
+  font-weight: bold;
+  text-align: center;
+  background-color: none;
+  vertical-align: middle;
+  line-height: 0px;
+}
+
+.activeBtn {
+  height: 30px;
+  width: 60px;
+  font-weight: bold;
+  text-align: center;
+  background-color: none;
+  vertical-align: middle;
+  line-height: 0px;
+}

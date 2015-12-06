@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app="ToDoBuilder">
+  <head>
+    <meta charset="utf-8">
+    <title>My todo list</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/toDoBuilderController.js"></script>
+    <link href="application.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body ng-controller="ToDoBuilderController as todoCtrl">
+    <div class="titleRectangle">
+      <h1 class="title">My To-Do List</h1>
+    </div><br>
+    <div>
+      <form class="form-horizontal">
+        <input class="task-box" type="text" ng-model="todoCtrl.newTask">
+        <button class="addBtn" ng-click="todoCtrl.addItem()">Add task</button>
+      </form><br>
+      <div class="list-tasks">
+        <div class="task" ng-repeat="task in todoCtrl.filtered">
+          <input class="completedTask" type="checkbox" ng-click="todoCtrl.doneItem(task)">
+          <blockquote class="list-tasks-item">{{task.description}}</blockquote>
+          <button class="deleteBtn" ng-click="todoCtrl.deleteItem(task)">X</button>
+        </div>
+      </div>
+      <div class="selectors">
+        <button class="allBtn" ng-click="todoCtrl.allItem()">All</button>
+        <button class="activeBtn" ng-click="todoCtrl.activeItem()">Active</button>
+      </div>
+    </div>
+  </body>
+</html>
