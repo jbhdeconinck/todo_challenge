@@ -16,14 +16,12 @@ todolistBuilder.controller('ToDoBuilderController', [function(){
   self.deleteItem = function(task){
     var idx = self.todoList.indexOf(task);
     self.todoList.splice(idx,1);
-    self.filtered = self.todoList;
   },
 
-  self.doneItem = function(task){
-    var idx = self.todoList.indexOf(task);
-    self.todoList[idx].completed = true;
-    self.filtered = self.todoList;
-  },
+  // self.doneItem = function(task){
+  //   var idx = self.todoList.indexOf(task);
+  //   self.todoList[idx].completed = true;
+  // },
 
   self.allItem = function() {
     self.filtered = self.todoList;

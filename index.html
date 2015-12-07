@@ -23,7 +23,7 @@
       </form><br>
       <div class="list-tasks">
         <div class="task" ng-repeat="task in todoCtrl.filtered">
-          <input class="completedTask" type="checkbox" ng-click="todoCtrl.doneItem(task)">
+          <input class="completedTask" type="checkbox" ng-model="task.completed">
           <blockquote class="list-tasks-item">{{task.description}}</blockquote>
           <button class="deleteBtn" ng-click="todoCtrl.deleteItem(task)">X</button>
         </div>
